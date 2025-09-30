@@ -1,0 +1,21 @@
+module prn_code_generator(
+		input clk,
+		input load_init
+		
+	);
+	// Each register has size of 19 in octal = 19*3 = 57
+	// Total of 55 registers for each r1, r2
+	reg [0:54] ro [0:56];
+	reg [0:54] r1 [0:56];
+	reg [0:4] c [0:4];
+	
+	always@(posedge clk)	begin
+		if(load_init == 1'b1)	begin
+			// Load the registers with initial values
+			
+		end
+		else	begin
+			// Start generating
+		end
+	end
+endmodule

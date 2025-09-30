@@ -1,0 +1,5 @@
+|prn_code_generator
+clk => ~NO_FANOUT~
+load_init => ~NO_FANOUT~
+
+
